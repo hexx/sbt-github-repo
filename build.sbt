@@ -8,8 +8,6 @@ name := "sbt-github-repo"
 
 version := "0.0.1"
 
-scalaVersion := "2.9.2"
-
 localRepo := Path.userHome / "github" / "maven"
 
 githubRepo := "git@github.com:hexx/maven.git"
