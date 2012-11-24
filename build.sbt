@@ -15,3 +15,6 @@ githubRepo := "git@github.com:hexx/maven.git"
 libraryDependencies <++= (scalaVersion, sbtBinaryVersion) { (scalaV, sbtV) => Seq(
   "com.typesafe.sbt" % "sbt-git" % "0.5.0" extra("scalaVersion" -> scalaV, "sbtVersion" -> sbtV)
 )}
+
+publishMavenStyle := false
+
