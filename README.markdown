@@ -10,8 +10,8 @@ Add the following to `project/plugins.sbt`.
       "jgit-repo" at "http://download.eclipse.org/jgit/maven",
       "hexx-releases" at "http://hexx.github.com/maven/releases"
     )
-    
-    addSbtPlugin("com.github.hexx" % "sbt-github-repo" % "0.0.1")
+
+    addSbtPlugin("com.github.hexx" % "sbt-github-repo" % "0.1.0")
 
 ## Publishing
 
@@ -19,9 +19,9 @@ If you want to create a repository on https://github.com/hexx/repo and a local r
 add the following to `build.sbt`.
 
     seq(githubRepoSettings: _*)
-    
+
     localRepo := Path.userHome / "github" / "repo
-    
+
     githubRepo := "git@github.com:hexx/repo.git"
 
 Run `sbt publish-to-github-repo` to publish your artifacts.
