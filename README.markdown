@@ -1,3 +1,5 @@
+# This project is no longer maintained.
+
 # sbt-github-repo
 
 creates your own Maven repository on Github.
